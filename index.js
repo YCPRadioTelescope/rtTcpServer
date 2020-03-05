@@ -1,7 +1,7 @@
 // Include Nodejs' net module.
 const Net = require('net');
 // The port on which the server is listening.
-const port = 8080;
+const port = 8020;
 
 // Use net.createServer() in your code. This is just for illustration purpose.
 // Create a new TCP server.
@@ -19,7 +19,7 @@ server.on('connection', function(socket) {
 
   // Now that a TCP connection has been established, the server can send data to
   // the client by writing to its socket.
-  socket.write('Hello, client.');
+  socket.write('Hello, middleman.');
 
   // The server can also receive data from the client by reading from its socket.
   socket.on('data', function(chunk) {
