@@ -1,14 +1,14 @@
 // Include Nodejs' net module.
 const Net = require('net');
 // The port on which the server is listening.
-const port = 8020;
+const port = 80;
 
 // Use net.createServer() in your code. This is just for illustration purpose.
 // Create a new TCP server.
 const server = new Net.Server();
 // The server listens to a socket for a client to make a connection request.
 // Think of a socket as an end point.
-server.listen(port, function() {
+server.listen(port, "10.0.2.2", function() {
   console.log(`Server listening for connection requests on socket localhost:${port}`);
 });
 
